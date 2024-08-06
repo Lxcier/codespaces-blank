@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
     <div className="container">
-      <div className="flex justify-center items-center lg:justify-between mx-auto h-[80vh] lg:h-auto px-4 lg:px-0">
-        <div className="w-full g:w-1/2 lg:text-left lg:py-0">
+      <div className="flex justify-center items-center lg:justify-between mx-auto h-[80vh] lg:h-[726px] px-4 lg:px-0">
+        <main className="w-full lg:text-left lg:py-0">
           <h1 className="text-blue-200">
             Navigating <span className="gradient">Legal Waters</span>, Securing
             Your Tomorrow
@@ -19,7 +19,7 @@ const Hero = () => {
               <a href="#">About Us</a>
             </button>
           </div>
-        </div>
+        </main>
         <img
           src="/HERO.svg"
           alt="Hero Image"

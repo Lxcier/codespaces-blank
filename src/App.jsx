@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Grid from './components/Grid'
+import Comp from './components/Comp'
+import Testimonials from './components/Testimonials'
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       />
       <Navbar />
       <Hero />
-      <Grid/>
+      <Grid />
+      <Comp />
+      <Testimonials />
     </div>
   )
 }

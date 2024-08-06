@@ -6,74 +6,76 @@
 
 /* Your custom CSS here */
 * {
-    @apply font-sans;
+  @apply font-sans;
+  image-rendering: optimizeSpeed;
 }
 
 body {
-    @apply overflow-x-hidden;
+  @apply overflow-x-hidden;
 }
 
 .container {
-    @apply p-0 lg:px-4 mx-auto;
+  @apply p-0 lg:px-4 mx-auto;
 }
 
 :root {
-    h1 {
-        @apply lg:text-7xl text-6xl font-medium -tracking-[3.75px] lg:-tracking-[4.25px];
-        line-height: 1.1;
-    }
-    
-    h2 {
-        @apply lg:text-6xl text-5xl font-medium -tracking-wide;
-        line-height: 1.2;
-    }
-    
-    h3 {
-        @apply text-5xl font-medium -tracking-wide;
-        line-height: 1.2;
-    }
+  h1 {
+    @apply lg:text-7xl text-6xl font-medium -tracking-[3.75px] lg:-tracking-[4.25px];
+    line-height: 1.1;
+  }
 
-    h4 {
-        @apply text-4xl font-medium -tracking-wide;
-        line-height: 1.2;
-    }
+  h2 {
+    @apply lg:text-6xl text-5xl font-medium -tracking-wide;
+    line-height: 1.2;
+  }
 
-    .sub {
-        @apply text-xl font-medium;
-        line-height: 1.5;
-    }
+  h3 {
+    @apply text-5xl font-medium -tracking-wide;
+    line-height: 1.2;
+  }
 
-    p, a {
-        @apply text-lg font-normal;
-        line-height: 1.5;
-    }
+  h4 {
+    @apply text-4xl font-medium -tracking-wide;
+    line-height: 1.2;
+  }
 
-    .card-title {
-        @apply text-4xl font-medium -tracking-wide;
-        line-height: 1.2;
-    }
+  .sub {
+    @apply text-xl font-medium;
+    line-height: 1.5;
+  }
+
+  p,
+  a {
+    @apply text-lg font-normal;
+    line-height: 1.5;
+  }
+
+  .card-title {
+    @apply text-4xl font-medium -tracking-wide;
+    line-height: 1.2;
+  }
 }
 
 a {
-    @apply transition-all duration-200;
+  @apply transition-all duration-200;
 }
 
 .btn {
-    @apply py-4 px-5 text-white-100 rounded-full block w-fit;
+  @apply py-3 px-6 text-white-100 rounded-full block w-fit;
 }
 
 .btn-primary {
-    @apply bg-blue-flat hover:text-white-100;
+  @apply bg-blue-flat hover:text-white-100;
 }
 
 .btn-secondary {
-    @apply bg-blue-200 hover:text-white-100;
+  @apply bg-blue-200 hover:text-white-100;
 }
 
 .gradient {
   /* Primeiro passo: definir um degradê como fundo */
-  background-image: linear-gradient(to right, #0103FF 0%, #01E4FF 100%);
-  
+  background-image: linear-gradient(to right, #0103ff 0%, #01e4ff 100%);
+
   /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
@@ -83,5 +85,4 @@ a {
 
   /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
   color: black;
-  
 }
